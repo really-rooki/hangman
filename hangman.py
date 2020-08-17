@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def hangman(word):
     wrong = 0
     stages = ["",
@@ -15,7 +16,7 @@ def hangman(word):
     print("Welcome to Hangman")
     while wrong < len(stages) - 1:
         print("\n")
-        msg = "Guess a letter"
+        msg = "Guess a letter: "
         char = input(msg)
         if char in rletters:
             cind = rletters.index(char)
